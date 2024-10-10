@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:object="${teacherInsertDTO}">
+
+        <form action="" method="POST">
+
+            <div>
+                <span>Εγγραφή Καθηγητή</span>
+            </div>
+
+            <div>
+                <input type="text" name="firstname" placeholder="Όνομα" th:field="*{firstname}">
+            </div>
+
+            <div>
+                <input type="text" name="lastname" placeholder="Επώνυμο" th:field="*{lastname}">
+            </div>
+
+            <div>
+                <input type="submit" value="Εισαγωγή">
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
