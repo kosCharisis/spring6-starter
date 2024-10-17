@@ -18,7 +18,7 @@ public class HelloController {
     }
 
     @GetMapping("/welcome")
-    public String sayWelcome(@RequestParam(value = "name", defaultValue = "Guest") String name,
+    public String sayWelcome(@RequestParam(defaultValue = "Guest") String name,
                              Model model) {
         model.addAttribute("name", name);
         return "welcome";
